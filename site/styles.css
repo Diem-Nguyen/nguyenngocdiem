@@ -1,6 +1,6 @@
 /* =============================================================
    Diem Nguyen — personal site
-   Classical design system (Cormorant Garamond + Lora, gold accent)
+  Classical design system with system fonts and a gold accent
    Chỉ sửa file này nếu muốn đổi màu / font / khoảng cách.
    ============================================================= */
 
@@ -17,8 +17,8 @@
   --n700: #605d5d;
   --n800: #444141;
 
-  --font-heading: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Lora", Georgia, serif;
+  --font-heading: Baskerville, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Iowan Old Style", Baskerville, "Palatino Linotype", Palatino, Georgia, serif;
 
   --s1: 4.6px;
   --s2: 9.2px;
@@ -144,14 +144,6 @@ section { padding: var(--s8) 0; }
   align-items: center;
   padding: var(--s8) 0;
 }
-.hero-kicker {
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: var(--accent-deep);
-  margin: 0 0 var(--s4);
-}
 .hero h1 {
   font-family: var(--font-heading);
   font-weight: 400;
@@ -250,7 +242,7 @@ section { padding: var(--s8) 0; }
   text-align: justify;
 }
 
-/* — writing / embeds — */
+/* — writing — */
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -261,14 +253,6 @@ section { padding: var(--s8) 0; }
 }
 .section-head a { font-size: 14px; text-decoration: underline; }
 .archive-note { margin: var(--s6) 0 0; }
-.embed {
-  width: 100%;
-  border: 1px solid var(--divider);
-  border-radius: var(--radius);
-  background: #fff;
-  display: block;
-}
-
 /* — post list — */
 .post-list { display: flex; flex-direction: column; }
 .post {
@@ -302,26 +286,6 @@ section { padding: var(--s8) 0; }
   margin: var(--s2) 0 0;
 }
 
-/* — subscribe — */
-.subscribe { text-align: center; padding: var(--s8) 0; }
-.subscribe h2 {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  margin: var(--s3) 0 var(--s4);
-}
-.subscribe p.blurb {
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--n700);
-  max-width: 54ch;
-  margin: 0 auto var(--s6);
-}
-.subscribe .embed { max-width: 480px; margin: 0 auto; }
-.footnote { font-size: 12px; color: var(--n600); margin: var(--s4) 0 0; }
-
 /* — connect + footer — */
 .connect-blurb {
   font-size: 17px;
@@ -352,5 +316,4 @@ footer p { font-size: 13px; color: var(--n600); margin: 0; }
   }
   .entry-logo { width: 48px; height: 48px; }
   .prose p, .entry-text { text-align: left; }
-  .subscribe h2 { font-size: 30px; }
 }
