@@ -153,6 +153,12 @@ section { padding: var(--s8) 0; }
   margin: 0 0 var(--s4);
   text-wrap: pretty;
 }
+.hero-tagline {
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 18px;
+  margin: calc(var(--s2) * -1) 0 var(--s4);
+}
 .hero-intro {
   font-size: 17px;
   line-height: 1.7;
@@ -160,6 +166,8 @@ section { padding: var(--s8) 0; }
   max-width: 54ch;
   margin: 0 0 var(--s6);
 }
+.hero-intro p { margin: 0 0 var(--s3); }
+.hero-intro p:last-child { margin-bottom: 0; }
 .actions { display: flex; gap: var(--s4); align-items: center; flex-wrap: wrap; }
 
 /* — plate: photographs sit matted, like a tipped-in book plate — */
