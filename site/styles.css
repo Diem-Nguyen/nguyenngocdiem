@@ -1,8 +1,40 @@
 /* =============================================================
    Diem Nguyen — personal site
-  Classical design system with system fonts and a gold accent
+  Classical design system with self-hosted fonts and a gold accent
    Chỉ sửa file này nếu muốn đổi màu / font / khoảng cách.
    ============================================================= */
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/cormorant-garamond-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/cormorant-garamond-600.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/lora-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/lora-600.ttf") format("truetype");
+}
 
 :root {
   --bg: #f3f2f2;
