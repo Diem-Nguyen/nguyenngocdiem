@@ -17,8 +17,8 @@
   --n700: #605d5d;
   --n800: #444141;
 
-  --font-heading: Baskerville, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --font-body: "Iowan Old Style", Baskerville, "Palatino Linotype", Palatino, Georgia, serif;
+  --font-heading: "Cormorant Garamond", Baskerville, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Lora", "Iowan Old Style", Baskerville, "Palatino Linotype", Palatino, Georgia, serif;
 
   --s1: 4.6px;
   --s2: 9.2px;
@@ -155,8 +155,11 @@ section { padding: var(--s8) 0; }
 }
 .hero-tagline {
   color: var(--accent);
-  font-family: var(--font-heading);
-  font-size: 18px;
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 12px;
   margin: calc(var(--s2) * -1) 0 var(--s4);
 }
 .hero-intro {
